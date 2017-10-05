@@ -23,6 +23,7 @@
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
     "magnet-link": "^1.1.1",
+    "magnet-uri": "^5.1.7",
     "rxjs": "^5.4.2",
     "webtorrent": "^0.98.19",
     "zone.js": "^0.8.14"

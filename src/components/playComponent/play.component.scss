@@ -1,0 +1,39 @@
+.loading {
+  text-align: center;
+}
+
+.torrent-list {
+  transition: height .2s ease;
+  overflow: hidden;
+
+  li {
+    list-style: decimal;
+    font-size: 16px;
+    height: 22px;
+    cursor: pointer;
+  }
+}
+
+h4 {
+  line-height: 22px;
+
+  display: flex;
+
+  .material-icons {
+    cursor: pointer;
+    font-size: 22px;
+
+    &.active {
+      color: #009688;
+    }
+  }
+}
+
+.play-box {
+  width: 100vw;
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}

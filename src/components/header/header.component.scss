@@ -1,0 +1,70 @@
+// border-raduis: 4px
+$br: 4px;
+$bc: rgb(220, 220, 220);
+
+.header {
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition:  height .2s ease;
+
+  &.playing {
+    height: 6vh;
+  }
+
+  .main-input {
+    width: 50vw;
+    padding: 4px 8px;
+    color: rgb(60, 60, 60);
+
+    outline: none;
+
+    font-size: 18px;
+    line-height: 18px;
+
+    border: 1px solid $bc;
+    border-top-left-radius: $br;
+    border-bottom-left-radius: $br;
+  }
+
+  .button-icon {
+    width: 60px;
+    height: 31px;
+    background: transparent;
+    border: none;
+    text-align: center;
+    padding: 0;
+
+    outline: none;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    transition: all .2s ease;
+
+    &.play {
+      background: rgba(33, 150, 243, .8);
+
+      border-right: 1px solid $bc;
+
+      &:active {
+        background: rgb(18, 135, 228);
+      }
+    }
+    &.file {
+      font-size: 18px;
+      background: rgb(4, 194, 176);
+
+      border-top-right-radius: $br;
+      border-bottom-right-radius: $br;
+
+      &:active {
+        background: rgba(0,150,136, 1);
+      }
+    }
+  }
+}

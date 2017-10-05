@@ -1,0 +1,15 @@
+<div *ngIf="!isLoading && files.length">
+  <h4>
+    <span class="material-icons"
+          (click)="toggleHideList()">{{!isHideList ? 'remove' : 'add'}}</span>
+    <span>文件列表:</span>
+    <!-- <span (click)="toggleHideList()" class="">{{isHideList ? '+' : '-' }}</span> -->
+  </h4>
+  <ul class="torrent-list" [style.height.px]="isHideList ? 0 : files.length * 16">
+      <li *ngFor="let file of files" (click)="playFile(file)">{{file.name}}</li>
+  </ul>
+</div>
+<div class="loading" *ngIf="isLoading">
+    加载文件中...
+</div>
+<div #play class="play-box"></div>

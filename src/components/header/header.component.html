@@ -1,0 +1,13 @@
+<div *ngIf="!isPlaying">
+  <p>
+      测试地址: magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fsintel.torrent
+  </p>
+</div>
+<div class="header" [class.playing]="isPlaying">
+  <input type="text" #url class="main-input"
+         placeholder="请输入，webTorrent地址..."/>
+  <button class="material-icons button-icon play"
+          (click)="clickPlay()">play_arrow</button>
+  <button class="material-icons button-icon file"
+          (click)="uploadFile()">insert_drive_file</button>
+</div>
